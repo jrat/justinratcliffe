@@ -1,0 +1,52 @@
+.column
+{
+  float: left;
+  width: 225px;
+}
+
+.column:first-child
+{
+  float: left;
+  width: 225px;
+  margin: 0 15px 0 0;
+}
+
+.column:last-child
+{
+  float: left;
+  width: 225px;
+  margin: 0 0 0 15px;
+}
+
+#portfolioList li
+{
+  list-style: none;
+	display: inline;
+	float: left;/*--------------------not sure why this is needed to keep these in the same line-------*/
+	margin: 0 15px 0 0;
+}
+
+/*specify size of images so it wont screw things up if they go missing*/
+#portfolioList li a img
+{
+  height: 65px;
+  width: 65px;
+  border: none;
+}
+
+/*
+#portfolioList li:first-child
+{
+  margin: 0 15px 0 0;
+}
+*/
+#portfolioList li:last-child
+{
+  margin: 0;
+}
+
+a img
+{
+  margin: 0;
+  border: none;
+}

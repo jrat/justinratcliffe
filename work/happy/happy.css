@@ -1,0 +1,85 @@
+
+/*
+  font is 25 which means there's another ~12 on top&bottom so put half of that
+  (12) as padding on top & bottom to center it in the cell
+*/
+h1
+{
+/*  font: bold 1.5em arial;*/
+  padding: 13px 0 13px 0;
+  font-size: 25px;
+  margin-bottom: 15px;
+
+}
+
+h2
+{
+/*  font: 1em arial;*/
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+h3
+{
+  font-size: 14px;
+}
+
+p
+{
+  font-size: 12px;
+  line-height: 1.8em;
+  padding-bottom: 15px;
+}
+
+img
+{
+  margin-bottom: 15px;
+}
+
+img:first-child
+{
+  float: left;
+  border: solid 1px #a3a3a3;
+}
+
+img:last-child
+{
+  float: right;
+  border: solid 1px #a3a3a3;
+}
+
+/*
+  this sits inside .content
+  dependancies
+    main::.content
+*/
+.columnImages
+{
+  width: 465px;
+  margin-right: 15px;
+  float: left;
+}
+
+/*
+  this sits inside .content to the right of columnImages
+  dependancies
+    main::.content
+*/
+.columnText
+{
+  width: 225px;
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

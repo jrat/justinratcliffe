@@ -1,0 +1,60 @@
+
+p
+{
+  font-size: 12px;
+  line-height: 1.8em;
+  padding-bottom: 15px;
+}
+
+img
+{
+  margin-bottom: 15px;
+}
+
+img:first-child
+{
+  float: left;
+  border: solid 1px #a3a3a3;
+}
+
+img:last-child
+{
+  float: right;
+  border: solid 1px #a3a3a3;
+}
+
+/*
+  this sits inside .content
+  dependancies
+    main::.content
+*/
+.columnImages
+{
+  width: 465px;
+  margin-right: 15px;
+  float: left;
+}
+
+/*
+  this sits inside .content to the right of columnImages
+  dependancies
+    main::.content
+*/
+.columnText
+{
+  width: 225px;
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

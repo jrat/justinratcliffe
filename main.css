@@ -1,0 +1,111 @@
+/*
+	Justin Alexander Ratcliffe
+*/
+
+*{
+	margin:0;
+	padding:0;
+/*	border:1px solid;*/
+}
+
+/*-- BEGIN General Rules --*/
+body
+{
+  width: 867px; /*(width of container + 15px gutter) + (width of nav images + 2*1px margin) = width of body*/
+/*  margin: 0 auto; this will make it float in the center...making it look a little weird and screws up w/scroll absent/present*/
+  margin: 0 0 0 15px;
+	font-size: 62.5%; /*  Sets 1em to 10px */
+	font-family: "Helvetica Neue", Helvetica, "Frutiger", "Univers" Arial, Verdana, sans-serif;
+	line-height:1.8em;
+}
+
+/*
+  font is 25 which means there's another ~12 on top&bottom so put half of that
+  (12) as padding on top & bottom to center it in the cell
+*/
+h1
+{
+/*  font: bold 1.5em arial;*/
+  padding: 13px 0 13px 0;
+  font-size: 25px;
+  border-bottom:1px solid;
+  margin-bottom: 15px;
+}
+
+h2
+{
+/*  font: 1em arial;*/
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+h3
+{
+  font-size: 14px;
+}
+
+p
+{
+  color: #000000;
+  font-size: 1.3em;
+  line-height: 1.25em;
+  margin: 0 0 12px 0;
+}
+
+p span
+{
+  font-weight: bold;
+}
+
+a
+{
+  color: #000000;
+  font-weight:bold;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/*END General Rules*/
+
+/*BEGIN divs*/
+
+.container
+{
+  float: right; /*containers floats on the right of the body and nav on left*/
+  width: 705px;/*----------------------------------change 705*/
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+/*
+  min-height dependant upon .conatiner's
+*/
+.content
+{
+  width: 705px;/*-----------------------------------------------705*/
+/*min-height: 600px;*/
+}
+
+.header
+{
+  height: 65px;
+  width: 705px;
+  background-image: url(img/title.png);
+  background-repeat: no-repeat;
+  margin: 15px 0;
+}
+
+.header:hover
+{
+  background-image: url(img/title_hover.png);
+}
+
+.footer
+{
+  height: 30px;
+  width: 705px;
+  background: #000000;
+  position: relative;
+  clear: both;
+}
+/*END divs*/
