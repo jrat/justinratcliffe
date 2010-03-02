@@ -5,18 +5,19 @@
 *{
 	margin:0;
 	padding:0;
-/*	border:1px solid;*/
+/*  border:1px solid;*/
 }
 
 /*-- BEGIN General Rules --*/
 body
 {
-  width: 867px; /*(width of container + 15px gutter) + (width of nav images + 2*1px margin) = width of body*/
+  width: 900px; /*867px; (width of container + 15px gutter) + (width of nav images + 2*1px margin) = width of body*/
 /*  margin: 0 auto; this will make it float in the center...making it look a little weird and screws up w/scroll absent/present*/
-  margin: 0 0 0 15px;
+  margin: 0 0 0 10px;
 	font-size: 62.5%; /*  Sets 1em to 10px */
 	font-family: "Helvetica Neue", Helvetica, "Frutiger", "Univers" Arial, Verdana, sans-serif;
 	line-height:1.8em;
+  background-image: url(img/grid.png);
 }
 
 /*
@@ -28,7 +29,6 @@ h1
 /*  font: bold 1.5em arial;*/
   padding: 13px 0 13px 0;
   font-size: 25px;
-  border-bottom:1px solid;
   margin-bottom: 15px;
 }
 
@@ -36,7 +36,9 @@ h2
 {
 /*  font: 1em arial;*/
   font-size: 18px;
-  padding-bottom: 15px;
+  padding-bottom:2px;
+  margin-bottom:10px;
+  border-bottom: 1px solid #4a4a4a
 }
 
 h3
@@ -67,13 +69,23 @@ a
 
 /*END General Rules*/
 
+
+/*want thumbnails to float in text*/
+img.thumbnail
+{
+  float:left;
+  margin:0 10px 10px 0;
+}
+
+
+
 /*BEGIN divs*/
 
 .container
 {
-  float: right; /*containers floats on the right of the body and nav on left*/
-  width: 705px;/*----------------------------------change 705*/
-  padding-left: 15px;
+/*  float: right; /*containers floats on the right of the body and nav on left*/*/
+  width: 785px;/*----------------------------------change 705*/
+/*  padding-left: 15px;*/
   margin: 0 auto;
 }
 
@@ -82,28 +94,59 @@ a
 */
 .content
 {
-  width: 705px;/*-----------------------------------------------705*/
+/*  width: 800px;--------------------------------------------may neeed to uncomment this*/
 /*min-height: 600px;*/
 }
 
 .header
 {
-  height: 65px;
-  width: 705px;
+  height: 75px; /*width and height of header image*/
+  width: 800px;
   background-image: url(img/title.png);
   background-repeat: no-repeat;
-  margin: 15px 0;
+  margin: 15px 0 0 0; /*adding space on top of header*/
+/*  border:1px solid;*/
 }
 
-.header:hover
+/*.header:hover--------------------don't need this if i have the nav
 {
   background-image: url(img/title_hover.png);
+}*/
+
+/*.navigation ul
+{
+  width: 785px;
+  margin-top: 65px;
+  border: 1px solid;
+}*/
+
+ul.navigation 
+{
+  border-bottom: 1px solid #4a4a4a;
+  width:800px;
+  margin:0 0 40px 0;
+}
+
+.navigation li
+{
+  margin-top: 65px;
+  list-style: none;
+	display: inline;
+  margin:0 12px 0 0;
+  font-size: 14px;
+}
+
+.section
+{
+  float:left;
+  width:800px;
+  margin: 0 0 25px 0;
 }
 
 .footer
 {
   height: 30px;
-  width: 705px;
+  width: 800px;
   background: #000000;
   position: relative;
   clear: both;

@@ -1,17 +1,31 @@
-.column
+.columnTwo
+{
+  float:left;
+  padding: 0 10px 0 0;
+  width:190px;
+/*  border:1px solid;*/
+}
+
+.columnThird
 {
   float: left;
   width: 225px;
 }
 
-.column:first-child
+.columnFive
+{
+  float:left;
+  width:500px;
+}
+
+.columnThird:first-child
 {
   float: left;
   width: 225px;
   margin: 0 15px 0 0;
 }
 
-.column:last-child
+.columnThird:last-child
 {
   float: left;
   width: 225px;
@@ -24,6 +38,7 @@
 	display: inline;
 	float: left;/*--------------------not sure why this is needed to keep these in the same line-------*/
 	margin: 0 15px 0 0;
+	border:1px solid;
 }
 
 /*specify size of images so it wont screw things up if they go missing*/
@@ -31,7 +46,12 @@
 {
   height: 65px;
   width: 65px;
-  border: none;
+}
+
+#portfolioList li p
+{
+  float:right;
+  width: 100px;
 }
 
 /*
