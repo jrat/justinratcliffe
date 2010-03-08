@@ -9,26 +9,25 @@
 </head>
 
 <body>
-  <div id="headerContainer">
-    <!-- <div id="filler">
-    </div> -->
-    <div id="header">
-    </div>
-    <ul id="navigation">
-      <li><a>Top</a></li>
-      <li><a>Work</a></li>
-      <li><a>Resume</a></li>
-    </ul>
-  </div>
   <div id="container">
 
+    <div id="headerContainer">
+      <ul id="navigation">
+        <li><a href="index.html" onClick="scrollTo_top(this.href);return false;">Top</a></li>
+        <li><a href="index.html" onClick="scrollTo_work(this.href);return false;">Work</a></li>
+        <li><a href="index.html" onClick="scrollTo_resume(this.href);return false;">Resume</a></li>
+      </ul>
+      <div id="filler">
+      </div>
+    </div>
 
     <div id="content">
       <div class="section">
         <div class="columnFive">
           <img src="img/jr.jpg" />
         </div>
-
+        <div class="columnOne">
+        </div>
         <div class="columnTwo">
           <p><span>I am from</span> the midwest but was born in Honolulu and am now living in The South</p>
           <p><span>I am currently</span> earning a Masters in Human Computer Interaction at Georgia Tech</p>
@@ -37,37 +36,95 @@
         </div>
       </div><!--end section-->
 
-      <div class="section">
+
+      <div id="work" class="section">
         <h2>View some of my work:</h2>
-        <div class="columnTwo">
-          <a href="work/vahi/vahi.html"><img class="thumbnail" src="img/blankimage.png" /></a><p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p
+        <div class="columnThree">
+          <a href="index.html" onClick="scrollTo_vahi(this.href);return false;"><img class="thumbnail" src="img/vahi_preview.png" /></a>
+        </div>
+        <div class="columnThree">
+          <a href="index.html" onClick="scrollTo_happy(this.href);return false;"><img class="thumbnail" src="img/happy_preview.png" /></a>
         </div>
         <div class="columnTwo">
-          <a href="work/vahi/vahi.html"><img class="thumbnail" src="img/blankimage.png" /></a><p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p
+          <a href="index.html" onClick="scrollTo_collab(this.href);return false;"><img class="thumbnail" src="img/collab_preview.png" /></a>
         </div>
-        <div class="columnTwo">
-          <a href="work/vahi/vahi.html"><img class="thumbnail" src="img/blankimage.png" /></a><p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p
-        </div>
-        <div class="columnTwo">
-          <a href="work/vahi/vahi.html"><img class="thumbnail" src="img/blankimage.png" /></a><p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet tellus eleifend ligula sagittis pulvinar. Donec enim lorem, rutrum vel ultrices at, tempor non nulla. Integer vitae interdum massa. Fusce in ultricies quam. Sed nisi ligula, sodales eu condimentum vitae, accumsan vel turpis. Vivamus eu erat risus. Morbi et lorem eget dolor venenatis ullamcorper eu sit amet mi. Cras sed erat nisi, porttitor accumsan felis. Donec vulputate, quam sit amet interdum condimentum, orci velit facilisis nisl, non ullamcorper risus metus at arcu. Phasellus non lacus ac erat lobortis viverra eu eget neque. Proin ante ante, rutrum a bibendum a, sagittis non tellus. Nullam sed enim quis massa vulputate volutpat ac ut ipsum. Donec non sem nibh, rutrum pretium felis.</p>
-        <p>Ut hendrerit, sapien at faucibus pretium, elit tellus bibendum leo, vel convallis sem massa vel lectus. Praesent consequat elit sit amet leo feugiat a laoreet neque consequat. Donec facilisis pulvinar fringilla. Sed purus dui, sodales nec bibendum in, facilisis et tellus. Nullam purus erat, scelerisque nec eleifend vitae, egestas in mauris. Etiam eget erat felis. Integer pretium pretium libero, id interdum odio tristique at. In non turpis dolor, vel scelerisque sem. Vestibulum id arcu nibh, vitae imperdiet orci. Quisque quis urna ut felis sollicitudin rhoncus. Aliquam sit amet purus sit amet est aliquam consectetur. Etiam porta felis quis erat congue varius. Duis bibendum mi quis eros cursus ut ultricies magna rhoncus. Mauris vel elit nibh, eleifend fringilla nisl. Ut aliquet, nisi vel interdum congue, arcu lorem molestie magna, non eleifend leo ante vel eros. Aliquam ac imperdiet tortor. Morbi malesuada quam eu lectus aliquam vestibulum. Nulla et neque erat, sit amet tincidunt sem. Fusce aliquam sagittis gravida.</p>
-        <p>Aliquam nec ante nulla. Donec non diam vel risus commodo lobortis ac id velit. Nullam nibh arcu, sodales sit amet volutpat quis, hendrerit quis felis. In adipiscing fringilla massa vel posuere. Sed malesuada varius sem nec faucibus. Fusce sollicitudin sapien vitae risus fermentum pretium. Aenean feugiat diam ac augue pretium mattis. Proin eget felis leo. Morbi mattis ullamcorper turpis, vel tempor justo commodo at. Vestibulum id velit justo. Proin accumsan auctor arcu, vitae molestie nulla suscipit in. Proin mollis pellentesque turpis, vel facilisis tortor dapibus quis. Integer arcu lorem, lobortis a convallis sit amet, semper ac sem. Suspendisse fermentum vehicula fermentum. Donec vel quam tortor. Vestibulum sit amet purus urna. Nullam euismod consequat tortor, nec semper tortor vehicula quis. Donec ac ligula quis justo hendrerit ultrices sit amet eu arcu. Cras hendrerit enim eget purus tincidunt ultrices. Phasellus dapibus, ipsum a vulputate pharetra, dolor tellus feugiat erat, at porttitor neque nisl vel sem.</p>
-        <p>Nunc ut convallis tellus. Phasellus dolor metus, fermentum in feugiat ac, imperdiet vel nulla. Etiam tempor congue mauris, et egestas ipsum tincidunt id. Integer consectetur leo eu ligula condimentum hendrerit. Quisque et nisi tortor, ut porta risus. Vestibulum nec facilisis turpis. Maecenas scelerisque tortor a felis blandit eget ornare urna aliquam. Nullam nec congue nulla. Donec sed lectus ut velit imperdiet aliquet. Cras a ante at diam molestie elementum id bibendum purus. Integer ultrices fermentum dolor ac consequat. Pellentesque quis eros eu turpis laoreet sollicitudin ac quis orci. Ut euismod, neque in imperdiet aliquam, diam dui rutrum justo, non mattis felis enim in sem. Aenean pretium, ante ut cursus venenatis, orci leo posuere mauris, in ultrices ligula nisi molestie massa. Sed a dolor pretium turpis consectetur gravida non eu nisi. Nullam malesuada sagittis risus id rhoncus. Aenean libero metus, tincidunt sed convallis aliquam, facilisis at ipsum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt blandit lacus ac bibendum. Vestibulum nec condimentum justo. Nulla justo mauris, ultricies non dapibus ut, dignissim eu massa. Phasellus sit amet risus id est iaculis gravida et non tellus. Curabitur aliquet porttitor enim non pellentesque. Donec dictum arcu at nisl pulvinar tempus. Cras accumsan, augue vel commodo semper, risus lacus scelerisque ipsum, at congue sapien justo at orci. Phasellus rhoncus quam ullamcorper odio interdum sollicitudin. Quisque auctor tempus turpis, eu accumsan erat adipiscing eu. Duis fringilla nulla vel arcu tempor in commodo nisl fringilla. Donec non diam non lectus accumsan tempus ac eu tortor. Pellentesque tristique venenatis sapien, in faucibus neque blandit sit amet. Mauris sed orci at ante gravida posuere non vitae nibh. Curabitur in purus a eros aliquam condimentum. Morbi feugiat consequat turpis, vitae adipiscing mauris porta vel. Praesent quis molestie magna. Morbi feugiat metus vitae nisi gravida nec eleifend urna fermentum.</p>
       </div><!--end section-->
 
       <div class="section">
-        <h2>Check out my resume:</h2>
-        <a href="resume/resume.html"><img src="img/resumepreview225.png" /></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet tellus eleifend ligula sagittis pulvinar. Donec enim lorem, rutrum vel ultrices at, tempor non nulla. Integer vitae interdum massa. Fusce in ultricies quam. Sed nisi ligula, sodales eu condimentum vitae, accumsan vel turpis. Vivamus eu erat risus. Morbi et lorem eget dolor venenatis ullamcorper eu sit amet mi. Cras sed erat nisi, porttitor accumsan felis. Donec vulputate, quam sit amet interdum condimentum, orci velit facilisis nisl, non ullamcorper risus metus at arcu. Phasellus non lacus ac erat lobortis viverra eu eget neque. Proin ante ante, rutrum a bibendum a, sagittis non tellus. Nullam sed enim quis massa vulputate volutpat ac ut ipsum. Donec non sem nibh, rutrum pretium felis.</p>
-        <p>Ut hendrerit, sapien at faucibus pretium, elit tellus bibendum leo, vel convallis sem massa vel lectus. Praesent consequat elit sit amet leo feugiat a laoreet neque consequat. Donec facilisis pulvinar fringilla. Sed purus dui, sodales nec bibendum in, facilisis et tellus. Nullam purus erat, scelerisque nec eleifend vitae, egestas in mauris. Etiam eget erat felis. Integer pretium pretium libero, id interdum odio tristique at. In non turpis dolor, vel scelerisque sem. Vestibulum id arcu nibh, vitae imperdiet orci. Quisque quis urna ut felis sollicitudin rhoncus. Aliquam sit amet purus sit amet est aliquam consectetur. Etiam porta felis quis erat congue varius. Duis bibendum mi quis eros cursus ut ultricies magna rhoncus. Mauris vel elit nibh, eleifend fringilla nisl. Ut aliquet, nisi vel interdum congue, arcu lorem molestie magna, non eleifend leo ante vel eros. Aliquam ac imperdiet tortor. Morbi malesuada quam eu lectus aliquam vestibulum. Nulla et neque erat, sit amet tincidunt sem. Fusce aliquam sagittis gravida.</p>
-        <p>Aliquam nec ante nulla. Donec non diam vel risus commodo lobortis ac id velit. Nullam nibh arcu, sodales sit amet volutpat quis, hendrerit quis felis. In adipiscing fringilla massa vel posuere. Sed malesuada varius sem nec faucibus. Fusce sollicitudin sapien vitae risus fermentum pretium. Aenean feugiat diam ac augue pretium mattis. Proin eget felis leo. Morbi mattis ullamcorper turpis, vel tempor justo commodo at. Vestibulum id velit justo. Proin accumsan auctor arcu, vitae molestie nulla suscipit in. Proin mollis pellentesque turpis, vel facilisis tortor dapibus quis. Integer arcu lorem, lobortis a convallis sit amet, semper ac sem. Suspendisse fermentum vehicula fermentum. Donec vel quam tortor. Vestibulum sit amet purus urna. Nullam euismod consequat tortor, nec semper tortor vehicula quis. Donec ac ligula quis justo hendrerit ultrices sit amet eu arcu. Cras hendrerit enim eget purus tincidunt ultrices. Phasellus dapibus, ipsum a vulputate pharetra, dolor tellus feugiat erat, at porttitor neque nisl vel sem.</p>
-        <p>Nunc ut convallis tellus. Phasellus dolor metus, fermentum in feugiat ac, imperdiet vel nulla. Etiam tempor congue mauris, et egestas ipsum tincidunt id. Integer consectetur leo eu ligula condimentum hendrerit. Quisque et nisi tortor, ut porta risus. Vestibulum nec facilisis turpis. Maecenas scelerisque tortor a felis blandit eget ornare urna aliquam. Nullam nec congue nulla. Donec sed lectus ut velit imperdiet aliquet. Cras a ante at diam molestie elementum id bibendum purus. Integer ultrices fermentum dolor ac consequat. Pellentesque quis eros eu turpis laoreet sollicitudin ac quis orci. Ut euismod, neque in imperdiet aliquam, diam dui rutrum justo, non mattis felis enim in sem. Aenean pretium, ante ut cursus venenatis, orci leo posuere mauris, in ultrices ligula nisi molestie massa. Sed a dolor pretium turpis consectetur gravida non eu nisi. Nullam malesuada sagittis risus id rhoncus. Aenean libero metus, tincidunt sed convallis aliquam, facilisis at ipsum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt blandit lacus ac bibendum. Vestibulum nec condimentum justo. Nulla justo mauris, ultricies non dapibus ut, dignissim eu massa. Phasellus sit amet risus id est iaculis gravida et non tellus. Curabitur aliquet porttitor enim non pellentesque. Donec dictum arcu at nisl pulvinar tempus. Cras accumsan, augue vel commodo semper, risus lacus scelerisque ipsum, at congue sapien justo at orci. Phasellus rhoncus quam ullamcorper odio interdum sollicitudin. Quisque auctor tempus turpis, eu accumsan erat adipiscing eu. Duis fringilla nulla vel arcu tempor in commodo nisl fringilla. Donec non diam non lectus accumsan tempus ac eu tortor. Pellentesque tristique venenatis sapien, in faucibus neque blandit sit amet. Mauris sed orci at ante gravida posuere non vitae nibh. Curabitur in purus a eros aliquam condimentum. Morbi feugiat consequat turpis, vitae adipiscing mauris porta vel. Praesent quis molestie magna. Morbi feugiat metus vitae nisi gravida nec eleifend urna fermentum.</p>
-      </div><!--end section-->
+        <h2>Introducing a Neighborhood</h2>
+        <div class="columnSix">
+          <img src="img/work/vahi/ss_home.png" />
+          <img src="img/work/vahi/ss_24hrs.png" />
+          <!-- <img src="img/work/vahi/ss_event.png" />
+          <img src="img/work/vahi/panoram.jpg" />
+          <img src="img/work/vahi/ss_old.png" /> -->
+          <img src="img/work/vahi/type.png" />
+        </div>
+        <div class="columnTwo">
+          <h3>Context</h3>
+          <p>An assignment in Georgia Tech's Visual Culture + Design course. The goals were to demonstrate knowledge in design grids, typography, and HTML/CSS by choosing an Atlanta neighborhood and detailing it in an online guide.</p>
+          <p>The project included the research and collection of information regarding the neighborhood, the visual design of the guide, and its implementation in HTML using CSS. The visual design focused on typography, typographic hierarchy, and grid.</p>
+          <h3>Approach</h3>
+          <h4>Characterizing a Neighborhood</h4>
+          <p>Having recently moved to the Virginia Highland neighborhood, also referred to as The Highlands, I had a sense of pride and desire to explore my new space. This assignment provided me with an excuse to investigate, analyze, and characterize The Highlands while learning how to convey this through design.</p>
+          <p>In retrospect, being a part of the culture I was depicting certainly influenced my depiction. Just as Andrew Blauvelt suggested that Ian Anderson's trip to Japan <a href="http://www.emigre.com/Editorial.php?sect=1&id=23">corrupted his naivete</a> of Japanese culture, I had let my knowledge of this space influence my depiction. I was too familiar with it to take only the obvious characteristics; in my case, I was able to ignore those and use what I wanted. It could be argued that I misidentified the culture in this neighborhood by making it an extension of my own personality. By choosing my own living space for this project, I was in fact portraying myself and what I saw myself to be. This became clear in conversation with an Atlantan that had described The Highlands as a modern environment populated by pretentious wealthy twenty-somethings and not the historical, easy going, green neighborhood I wanted it to be.</p>
+          <h4>Defining an aesthetic</h4>
+          <p>Being my first attempt at final design, (as opposed to early design such as content design, layout, and structure) I began by examining my favorite web designs. I have always been fond of how <a href="http://www.nytimes.com">NYTimes.com</a> is styled but could never place the reasons; that is, until I learned the fundamentals of grid, heirarchy, and type. I was able to appreciate a very well designed grid and proper alignment and the prodigious amount of information effectively displayed is something I began to admire.</p>
+          <p>Richard Buchanan defines successful attributes of <a href="http://id.bobulate.com/readings/gooddesign.pdf">  good design</a> as usefulness, usability, and desirability. Visual style plays a large part in the second two, however a beautiful website that doesn't serve some utility won't be visited; a balance of all three qualities must be achieved. In this project, I wanted the content to become a utility for visitors and current residents of the neighborhood. To approach this, I included an embedded Google Street View map and also adopted The New York Times 36 Hours theme for travelers. My version lists an entire day of activities for different visitors such as college students.</p>
+          <h3>Process</h3>
+          <p>I began by researching demographics, historic details, and images of the neighborhood. Combining this content into a grid with limited color produced a sterile design. In the second iteration, I broke the grid and began to explore color schemes that were professional and natural.</p>
+          <p>I view The Highlands as a relaxed community of young professionals and I wanted to choose a layout that subtly displayed this. The grid can be seen in all pages and has been broken in places to relax it slightly. I also took the same approach with the type used for the header. <a href="http://www.josbuivenga.demon.nl/anivers.html">Anivers</a> is a sans-serif typeface that has a sturdy feeling, however is flexible and even funky in some ways.</p>
+  			</div>
+      </div>
 
+      <div class="section happy">
+        <h2>Visualizing Happiness</h2>
+
+        <div class="columnSix">
+          <img src="img/work/happy/ss_happy_01.png" />
+          <img src="img/work/happy/ss_happy_02.png" />
+        </div>
+
+        <div class="columnTwo">
+          <h3>Context</h3>
+          <p>This visualization was created by myself and Jesse Cook in the Visual Analytics course at SIUE. The goals were to find a dataset and create a visualization that would lead to the discovery of interesting findings.</p>
+          <p>The constraints of the assignment were to use Processing and utilize visualization techniques covered throughout the course.</p>
+          <h3>Approach</h3>
+          <h4>Finding Data and Inspiration</h4>
+          <p>The dataset we chose was compiled by Ruut Veenhoven at Erasmus University in Rotterdam. This set had been collected for 20 years and contains data on measured happiness in 14 nations with over 10 comparable datapoints. These datapoints include information such as average happiness, inequality of happiness, and life expectancy. This data has been used in many different contexts attempts to identify trends of happiness in nations and explain the changes of happiness over time.</p>
+          <p>We proposed a visualization of a subset of this set that would provide animated visualization over time as well as filtering options. We wanted to users to be able to identify interesting trends over time while also ﬁnding the interface enjoyable. Our inspiration had come from a <a href="http://www.ted.com/index.php/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen.html">Ted Talk</a> on Gapminder by Hans Rosling.</p>
+          <h3>Implementation Details</h3>
+          <p>The application reads from a CSV file containing information on average happiness ratings for 10 countries along with their Gross Domestic Product per capita and average life expectancy.</p>
+          <p>Users can play, pause, reset as well as filter which information is most visible by clicking the circles in the legend or on the graph. The name of the country is displayed when the datapoint is hovered over and the time is mapped by a status bar at the bottom.</p>
+          <p><a href="product/Happy_Vis.jar">Download</a></p>
+        </div>
+      </div>
+
+      <div class="section collab">
+        <h2>Collaborative Annotation</h2>
+
+        <div class="columnSix">
+          <img src="img/work/collab/ss_collab_01.png" />
+          <img src="img/work/collab/ss_collab_02.png" />
+        </div>
+
+        <div class="columnTwo">
+          <h3>Context</h3>
+          <p>The inspiration for this prototype emerged during discussions of academic and design articles in the Principles of Interaction Design course. As a class, we are asked to read a number of articles - some of which contain very abstract and complex concepts. My peers and I came to find that many of us had very different views on the articles which yielded fascinating discussions during class time. However, I felt that if we had been able to see each others' comments before class, we would be able to debate much more effectively.</p>
+          <h3>Approach</h3>
+          <h4>Finding Data and Inspiration</h4>
+          <p>My goal was to take our group discussions to a richer level by encouraging collaboration. If students could read from the same article and see each others' notes, they could begin thinking about other interpretations before the in-class discussion takes place. It also would allow the instructor to facilitate discussions more effectively after knowing what the students are taking from the article.</p>
+          <h3>Implementation Details</h3>
+          <p>The prototype was developed with Adobe Flash and it displays and stores comments created while a reader scrolls through images of book content. Other media such as mockups and presentations could be exported as images and uploaded as well.</p>
+          <h3>Next Steps</h3>
+          <p>With open licensing of classic literature, this application would be ideal for virtual book clubs. Comments could be stored from other readers, academics, or friends and family; with this tool, reading would certainly be enhanced through this digital medium.</p>
+        </div>
+      </div>
+
+      <div class="section resume">
+        <h2>Check out my resume:</h2>
+          <img src="img/resume/JustinRatcliffe_Resume.png" />
+      </div>
     </div>
 	  <div class="footer"></div>
   </div><!--container-->

@@ -14,11 +14,11 @@ body
   width: 900px; /*867px; (width of container + 15px gutter) + (width of nav images + 2*1px margin) = width of body*/
 /*  margin: 0 auto; this will make it float in the center...making it look a little weird and screws up w/scroll absent/present*/
   margin: 0 0 0 10px;
+  padding:175px 0 0 0;
 	font-size: 62.5%; /*  Sets 1em to 10px */
 	font-family: "Helvetica Neue", Helvetica, "Frutiger", "Univers" Arial, Verdana, sans-serif;
 	line-height:1.8em;
 /*  background-image: url(img/grid.png);*/
-/*  overflow:hidden;*/
 }
 
 /*
@@ -38,13 +38,20 @@ h2
 /*  font: 1em arial;*/
   font-size: 18px;
   padding-bottom:2px;
-  margin-bottom:10px;
-  border-bottom: 1px solid #4a4a4a
+  margin-bottom:15px;
+  border-bottom: 2px solid #4a4a4a;
 }
 
 h3
 {
-  font-size: 14px;
+  font-size: 16px;
+  margin-bottom:10px;
+  border-bottom: 1px solid #4a4a4a
+}
+
+h4
+{
+  font-size: 12px;
 }
 
 p
@@ -70,6 +77,10 @@ a
 
 /*END General Rules*/
 
+img
+{
+  border:solid 1px #4a4a4a;
+}
 
 /*want thumbnails to float in text*/
 img.thumbnail
@@ -82,19 +93,30 @@ img.thumbnail
 
 /*BEGIN divs*/
 
+#headerContainer
+{
+  height: 100px;
+  width: 800px;
+  background:#ffffff;
+  background-image: url(img/title.png);
+  background-repeat: no-repeat;
+  position:absolute;
+  top:0;
+  position: fixed;
+}
+
+/*.header:hover--------------------don't need this if i have the nav
+{
+  background-image: url(img/title_hover.png);
+}*/
+
 .container
 {
 /*  float: right; /*containers floats on the right of the body and nav on left*/*/
-  width: 785px;/*----------------------------------change 705*/
+  width: 900px;/*----------------------------------change 705*/
 /*  padding-left: 15px;*/
   margin: 0 auto;
 }
-
-/*.jScrollPaneContainer
-{
-  position: relative;
-  overflow: hidden;
-}*/
 
 /*
   min-height dependant upon .conatiner's
@@ -103,33 +125,9 @@ img.thumbnail
 {
 /*  height:1000px;*/
   width:800px;
-  height:100%;
+/*  height:100%;*/
   overflow:auto;
 }
-
-#filler
-{
-  height:15px;
-  background:#ffffff;
-  border:1px solid #1a1a1a;
-  position:fixed;
-}
-
-#header
-{
-  height: 75px; /*width and height of header image*/
-  width: 800px;
-  background-image: url(img/title.png);
-  background-repeat: no-repeat;
-  margin: 15px 0 0 0;
-  position: fixed;
-/*  border:1px solid;*/
-}
-
-/*.header:hover--------------------don't need this if i have the nav
-{
-  background-image: url(img/title_hover.png);
-}*/
 
 /*.navigation ul
 {
@@ -138,23 +136,29 @@ img.thumbnail
   border: 1px solid;
 }*/
 
+#filler
+{
+  height:15px;
+  background:#ffffff;
+  position:relative;
+  top:100%;
+  border-bottom:1px solid #4a4a4a;
+}
+
 #navigation
 {
-  margin:90px 0 0 0;
+/*  margin:75px 0 0 0;*/
 /*  background:#ffffff;*/
   position:relative;
+  top:100%;
   border:1px solid #ffffff;
 }
 
 ul#navigation 
 {
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 3px solid #4a4a4a;
   width:800px;
-/*  margin:0 0 40px 0;*/
-  margin:75px 0 40px 0;
   background:#ffffff;
-  position:relative;
-/*  border:1px solid #ffffff;*/
 }
 
 #navigation li
@@ -162,15 +166,57 @@ ul#navigation
   margin-top: 65px;
   list-style: none;
 	display: inline;
-  margin:0 12px 0 0;
+  padding:0 35px 0 0;
   font-size: 14px;
+/*  color:#1a1a1a;*/
+/*  border-right:1px solid #ffffff;*/
+}
+
+#navigation li a
+{
+/*  color:#ffffff;*/
 }
 
 .section
 {
   float:left;
   width:800px;
-  margin: 0 0 25px 0;
+  margin: 0 0 50px 0;
+}
+
+.columnOne
+{
+  float:left;
+  padding: 0 10px 0 0;
+  width:100px;
+  height:100%;
+}
+.columnTwo
+{
+  float:left;
+  padding: 0 10px 0 0;
+  width:190px;
+/*  border:1px solid;*/
+}
+.columnThree
+{
+  float:left;
+  padding:0 10px 0 0;
+  width:290px;
+/*  border:1px solid;*/
+}
+.columnFive
+{
+  float:left;
+  padding: 0 10px 0 0;  
+  width:490px;
+}
+
+.columnSix
+{
+  float:left;
+  padding: 0 10px 0 0;
+  width:590px;
 }
 
 .footer
