@@ -227,4 +227,9 @@ ul#navigation
   position: relative;
   clear: both;
 }
+
+.floatRight
+{
+  float:right;
+}
 /*END divs*/
